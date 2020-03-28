@@ -1,5 +1,5 @@
 # YTstats
-<pre>
+
 clone project
 cd YTstats
 
@@ -26,11 +26,11 @@ edit yt_data.py line 62
 django part 
 cd ../yt_stats
 $ python manage.py makemigrations && python manage.py migrate $$ python manage.py runserver
-</pre>
+
 
 <h1>Pseudo algorithm for as many channel as posible</h1>
-<pre>
+
 Sending requests to google api to get new uploaded videos, if new video is uploaded store upload time to db, next, set time to start function if video online time is near 1 hour. If many processes are started at same time, add threads. 
-</pre>
+
 
 
