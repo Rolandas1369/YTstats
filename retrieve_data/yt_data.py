@@ -59,7 +59,7 @@ def get_channel_video_ids(channel_id):
         print("Time hours online", video_online_time.total_seconds() / 3600)
         # how long video is online < 1 less when hour
         # final version 0.95 < x < 1.05 if code runs in 5 mins interval
-        if 0.95 < (video_online_time.total_seconds() / 3600) < 20:
+        if 0.95 < (video_online_time.total_seconds() / 3600) < 2:
             video_ids.append(res['items'][i]['snippet']['resourceId']['videoId'])
 
     return video_ids

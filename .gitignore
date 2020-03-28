@@ -5,3 +5,5 @@ mysql.cnf
 __pycache/
 migrations/
 __pycache__
+
+
