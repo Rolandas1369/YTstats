@@ -1,0 +1,7 @@
+env
+.idea
+.vscode
+mysql.cnf
+__pycache/
+migrations/
+__pycache__
