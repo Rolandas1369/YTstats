@@ -1,3 +1,29 @@
+# Task
+<pre>
+Hey!
+You need to create a simple application which:
+1. Using Youtube API (https://developers.google.com/youtube/v3/) scrapes channel
+videos with tags and stats. Also you need to track changes of video stats every N
+minutes in order to see how videos are performing. Please pick the interval to scan stats
+which, according to you, is efficient and smart. You can hardcode channel ID in code,
+that’s not important.
+2. Create DB scheme and save scraped data. Please consider, that we will want to scan a
+lot of channels, so queries to aggregate and select data shouldn’t take long. Use any database
+you feel right.
+3. Create mini API, where you can filter videos:
+a) By tags.
+b) By video performance (first hour views divided by channels all videos first hour
+views median)
+Bonus points for:
+i) pseudo algorithm for fetching as many youtube channels as possible.
+ii) unit tests
+Requirements:
+Python; (use Django/flask framework, please)
+MySQL DB;
+After finishing task, please send us the bitbucket repository link.
+Good Luck :)
+</pre>
+
 # YTstats
 <pre>
 clone project
