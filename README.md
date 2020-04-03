@@ -26,6 +26,12 @@ Good Luck :)
 
 # YTstats
 <pre>
+Task is divided into teo parts: 
+1. Data gathering part from google api, and is located in retrieve_data.
+2. Django part yt_stats
+
+Idea of two parts is simple. One will retrieve data, another will display data. If one will crash another will work.
+
 clone project
 cd YTstats
 
