@@ -4,7 +4,7 @@ my_db = mysql.connector.connect(
     option_files='../mysql.cnf'
 )
 
-def create_tables(mydb=my_db):
+def create_tables(mydb):
     """ Creates table for data storage from API"""
     mydb._execute_query("CREATE TABLE video_data ("
                         " id INT AUTO_INCREMENT PRIMARY KEY, "
@@ -36,6 +36,7 @@ def insert_data(data_dict, table_name, mycursor, mydb):
         mycursor.execute(mysql_insert_query, values)
         mydb.commit()
 
+create_tables(my_db):
 
 # import statistics
 # listA = [19, 46, 21, 18, 30]
