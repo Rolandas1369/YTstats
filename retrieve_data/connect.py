@@ -1,8 +1,10 @@
-""" Mysql table creation, data insertation functions """
+import mysql.connector
 
 my_db = mysql.connector.connect(
     option_files='../mysql.cnf'
 )
+
+""" Mysql table creation, data insertation functions """
 
 def create_tables(mydb):
     """ Creates table for data storage from API"""
