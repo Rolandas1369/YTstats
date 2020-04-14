@@ -8,7 +8,7 @@ my_db = mysql.connector.connect(
 
 def create_tables(mydb):
     """ Creates table for data storage from API"""
-    mydb._execute_query("CREATE TABLE video_data ("
+    mydb._execute_query("CREATE TABLE IF NOT EXISTS video_data ("
                         " id INT AUTO_INCREMENT PRIMARY KEY, "
                         " channel_id VARCHAR(255) NOT NULL, "
                         " tags TEXT, "
