@@ -1,6 +1,10 @@
 """ Mysql table creation, data insertation functions """
 
-def create_tables(mydb):
+my_db = mysql.connector.connect(
+    option_files='../mysql.cnf'
+)
+
+def create_tables(mydb=my_db):
     """ Creates table for data storage from API"""
     mydb._execute_query("CREATE TABLE video_data ("
                         " id INT AUTO_INCREMENT PRIMARY KEY, "
