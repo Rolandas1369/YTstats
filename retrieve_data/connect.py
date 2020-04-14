@@ -36,7 +36,7 @@ def insert_data(data_dict, table_name, mycursor, mydb):
         mycursor.execute(mysql_insert_query, values)
         mydb.commit()
 
-create_tables(my_db):
+create_tables(my_db)
 
 # import statistics
 # listA = [19, 46, 21, 18, 30]
