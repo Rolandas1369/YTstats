@@ -1,4 +1,6 @@
 # YTstats
+This project uses Youtube Data api, mysql for data storage, django, django rest framework, django filtering.
+
 <pre>
 Task is divided into teo parts: 
 1. Data gathering part from google api, and is located in retrieve_data.
