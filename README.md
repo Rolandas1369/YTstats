@@ -23,11 +23,12 @@ $ source env/bin/activate
 $ pip install -r requirements.txt
 
 Project is separated to 2 parts one part data gathering and data insertation:
-cd retrive_data
+cd retrieve_data
 and start a task what run each 5 minutes
 celery worker -l info -A yt_data --beat
-data is collected if video is beetwean 1 and 2 (final version 0.95 and 1.05) hours online to change this 
-edit yt_data.py line 62
+or 
+
+python yt_data to run code once
 
 django part 
 cd ../yt_stats
